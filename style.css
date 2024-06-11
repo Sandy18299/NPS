@@ -1,0 +1,259 @@
+
+.main {
+    background-image: url('Pattern-Transparent-Background.png'); /* Path to your background wallpaper image */
+    background-size: cover; /* Ensure the image covers the entire body */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll with the content */
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    border: 5px dotted hotpink;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px 5px #f0f;
+    animation: funnyAnimation 3s infinite;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    font-size: 2em;
+    text-align: center;
+    transform: rotate(0deg);
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes funnyAnimation {
+    0% { transform: rotate(0deg) scale(1); background-color: lightblue; }
+    25% { transform: rotate(5deg) scale(1.1); background-color: lightgreen; }
+    50% { transform: rotate(-5deg) scale(1); background-color: lightcoral; }
+    75% { transform: rotate(10deg) scale(1.1); background-color: lightgoldenrodyellow; }
+    100% { transform: rotate(0deg) scale(1); background-color: lightblue; }
+}
+
+.container::after {
+    content: "LOL!";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5em;
+    color: red;
+    transform: rotate(-45deg);
+}
+
+.container:hover {
+    cursor: pointer;
+    animation-play-state: paused;
+    background-color: #ffeb3b;
+}
+
+
+.button-container {
+    display: flex;
+    margin: 10% auto;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90%; /* Adjust the width as needed */
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.styled-button {
+    padding: 15px 30px;
+    border: 2px solid #15268e;
+    border-radius: 25px;
+    background-color: #15268e;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.styled-button:hover {
+    background-color: white;
+    color: #15268e;
+    border-color: #15268e;
+    transform: translateY(-5px);
+}
+
+.styled-button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-button {
+    order: 2; /* Ensure the right button is placed on the right */
+}
+
+.left-button {
+    order: 1; /* Ensure the left button is placed on the left */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnleftContainer{
+    margin: 0;
+  padding: 0;
+  height: 100 vh;
+
+}
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  
+  }
+  
+  .img-container img {
+    max-width: 50%; /* Ensure image responsiveness */
+    height: auto;
+  }
+  
+  
+  .btnleftimg {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  
+  
+ 
+.button-containerleft {
+    display: flex;
+    margin: 5% auto;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90%; /* Adjust the width as needed */
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.styledbuttonleft {
+    padding: 15px 30px;
+    border: 2px solid #15268e;
+    border-radius: 25px;
+    background-color: #15268e;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.styledbuttonleft:hover {
+    background-color: white;
+    color: #15268e;
+    border-color: #15268e;
+    transform: translateY(-5px);
+}
+
+.styledbuttonleft:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.p-container {
+    margin: 0 auto;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #03777941; 
+    text-align: center;
+}
+.p-container p {
+    font-size: 24px;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White semi-transparent background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    color: #000; /* Black text color */
+  }
+  
+  .p-container p::first-letter {
+    font-size: 48px; /* Larger first letter */
+    color: #00ced1; /* Dark turquoise color */
+    font-weight: bold; /* Bold first letter */
+  }
+  
+  .p-container p:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  .p-container .img {
+    margin-top: 20px; /* Add some spacing between paragraph and image */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center vertically */
+  }
+  
+  /* Corrected class name */
+  .p-container .img img {
+    width: 50%; /* Set image width to 50% of its container */
+  }
+
+  .instructions {
+    font-size: 16px;
+    color: #3d3d3d;
+ 
+    
+  }
+  .rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  
+  .rating-description {
+    margin-right: 10px;
+  }
+  
+  .rating img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+  }
+
+
+  .btnPage2 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .btnPage2 button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    color: #00ced1;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .btnPage2 button:hover {
+    background-color: #fff;
+    color: #00ced1;
+}
